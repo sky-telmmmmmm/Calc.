@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div id="calc">
+        <div id="container">
+            <button onclick="appendixToDisplay('@')" class="topbtn">@</button>
+            <button onclick="appendixToDisplay('$')" class="topbtn">$</button>
+            <input id="display" readonly>
+            <div class="icon"></div>
+        </div>
+        
+        <div id="keys">
+            <button onclick="cleardisplay()" class="blu">c</button>
+            <button onclick="appendixToDisplay('/')" class="blu">/</button>
+            <button onclick="appendixToDisplay('*')" class="blu">*</button>
+            <button onclick="appendixToDisplay('#')" class="blu">#</button>
+            <button onclick="appendixToDisplay('7')">7</button>
+            <button onclick="appendixToDisplay('8')">9</button>
+            <button onclick="appendixToDisplay('4')">4</button>
+            <button onclick="appendixToDisplay('-')" class="blu">-</button>
+            <button onclick="appendixToDisplay('5')">5</button>
+            <button onclick="appendixToDisplay('6')">6</button>
+            <button onclick="appendixToDisplay('1')">1</button>
+            <button onclick="appendixToDisplay('+')" class="blu">+</button>
+            <button onclick="appendixToDisplay('2')">2</button>
+            <button onclick="appendixToDisplay('3')">3</button>
+            <button onclick="appendixToDisplay('%')">%</button>
+            <button onclick="appendixToDisplay('0')">0</button>
+            <button onclick="appendixToDisplay('.')">.</button>
+            <button onclick="calculate()" class="special">=</button>
+            
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
